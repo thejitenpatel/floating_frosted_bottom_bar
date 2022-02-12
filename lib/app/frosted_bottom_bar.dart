@@ -8,9 +8,7 @@ import 'scroll_controller_provider.dart';
 class FrostedBottomBar extends StatefulWidget {
   final Widget Function(BuildContext context, ScrollController controller) body;
   final Widget child;
-  final double iconWidth;
-  final double iconHeight;
-  final Color barColor;
+  final Color bottomBarColor;
   final double end;
   final double start;
   final double bottom;
@@ -32,9 +30,7 @@ class FrostedBottomBar extends StatefulWidget {
   const FrostedBottomBar({
     required this.body,
     required this.child,
-    this.iconWidth = 40,
-    this.iconHeight = 40,
-    this.barColor = Colors.black,
+    this.bottomBarColor = Colors.black,
     this.end = 0,
     this.start = 2,
     this.bottom = 10,
@@ -181,11 +177,11 @@ class _FrostedBottomBarState extends State<FrostedBottomBar>
                   child: Container(
                     width: widget.width,
                     decoration: BoxDecoration(
-                      color: widget.barColor,
+                      color: widget.bottomBarColor,
                       borderRadius: widget.borderRadius,
                     ),
                     child: Material(
-                      color: widget.barColor,
+                      color: widget.bottomBarColor,
                       child: widget.child,
                     ),
                   ),

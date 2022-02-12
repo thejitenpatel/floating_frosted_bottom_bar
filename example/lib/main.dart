@@ -115,9 +115,14 @@ class _MyHomePageState extends State<MyHomePage>
           dragStartBehavior: DragStartBehavior.down,
           physics: const BouncingScrollPhysics(),
           children: colors
-              .map((e) => LogoList(
-                    scrollController: controller,
-                  ))
+              .map(
+                (e) => ListView.builder(
+                  controller: controller,
+                  itemBuilder: (context, index) {
+                    return const Card(child: FittedBox(child: FlutterLogo()));
+                  },
+                ),
+              )
               .toList(),
         ),
       ),
