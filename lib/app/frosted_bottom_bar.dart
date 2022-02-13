@@ -99,9 +99,11 @@ class _FrostedBottomBarState extends State<FrostedBottomBar>
 
   void hideBottomBar() {
     if (mounted && widget.hideOnScroll) {
-      setState(() {
-        _controller.reverse();
-      });
+      setState(
+        () {
+          _controller.reverse();
+        },
+      );
     }
     if (widget.onBottomBarHidden != null) widget.onBottomBarHidden!();
   }
