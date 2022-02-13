@@ -1,21 +1,13 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
 
 # Floating Frosted Bottom Bar
-
+[![Dart](https://img.shields.io/badge/Dart-0175C2?logo=dart&logoColor=white)](https://pub.dev/packages/fancy_text_reveal)  ![Flutter](https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white)
 A Flutter package that helps you to create a frosted floating bottom navigation bar that also reacts to scrolling events.
 
-## Usage
+# Demo 👀
+![Output sample](images/gif1.gif)
+
+## Usage 🎨
 
 Wrap any child widget with `FrostedBottomBar` to convert it into frosted bottom bar.
 Basic example,
@@ -44,46 +36,19 @@ FrostedBottomBar(
 
 Following are the optional properties that can be used inside `FrostedBottomBar`
 
-### bottomBarColor
-
-```dart
-bottomBarColor: Colors.grey
-```
-
-Change the bottom bar color
-
-### end
-
-```dart
-end: 0
-```
-
-The end position in `y-axis` of the SlideTransition of the `FrostedBottomBar`.
-
-### start
-
-```dart
-start: 2
-```
-
-The start position in `y-axis` of the SlideTransition of the `FrostedBottomBar`.
-
-### bottom
-
-```dart
-bottom: 10
-```
-
-The position of the Frosted bar from the bottom
-
-### duration
-
-```dart
-bottom: 10
-```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+| Parameter | Example | Action |
+|:---|:---|:---|
+| sgimaX |```sgimaX: 5``` | Creates an image filter that applies a Gaussian blur |
+| sgimaY |```sgimaY: 5``` | Creates an image filter that applies a Gaussian blur |
+| opacity |```opacity: 0.6``` | An opacity of 1.0 is fully opaque. An opacity of 0.0 is fully transparent (i.e., invisible). |
+| hideOnScroll |```hideOnScroll: false``` | On true it will hide bottom bar on scroll |
+| bottomBarColor |```bottomBarColor: Colors.grey``` | Change the bottom bar color |
+| start |```start: 2``` | The start position in `y-axis` of the SlideTransition of the `FrostedBottomBar` |
+| end |```end: 0``` | The end position in `y-axis` of the SlideTransition of the `FrostedBottomBar`|
+| duration |```duration: const Duration(seconds: 1)``` | Set the duration of the `FrostedBottomBar` |
+| width |```width: MediaQuery.of(context).size.width * 0.6``` | Set the width for `FrostedBottomBar` |
+| borderRadius |```borderRadius: BorderRadius.circular(500)``` | Set the radius of `FrostedBottomBar` |
+| reverse |```reverse: true``` | Reverse the direction of scrolling of `FrostedBottomBar` i.e. if you want to make the bar visible when you scroll down and hide it when you scroll up, set this to `true`|
+| alignment |```alignment: Alignment.bottomCenter``` | Set the alignment of `FrostedBottomBar` |
+| fit |```fit: StackFit.loose``` |The fit property of the Stack in which the `FrostedBottomBar` is placed |
+| alignment |```alignment: Alignment.bottomCenter``` | Set the alignment of `FrostedBottomBar` |
