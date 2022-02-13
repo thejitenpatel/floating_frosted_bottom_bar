@@ -1,7 +1,7 @@
 name: floating_frosted_bottom_bar
-description: A new Flutter package project.
+description: Frosted bottom navigation bar allows you to create frsoted bottom bar that also reacts on scroll events.
 version: 0.0.1
-homepage:
+homepage: https://github.com/TheBoy-WhoCode/floating_frosted_bottom_bar
 
 environment:
   sdk: ">=2.16.0 <3.0.0"
