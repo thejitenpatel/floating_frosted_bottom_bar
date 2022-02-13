@@ -5,7 +5,7 @@
 A Flutter package that helps you to create a frosted floating bottom navigation bar that also reacts to scrolling events.
 
 # Demo 👀
-![Output sample](images/gif1.mp4)
+![Output sample](images/gifv1.gif)
 
 ## Usage 🎨
 
