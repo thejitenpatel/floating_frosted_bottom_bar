@@ -2,6 +2,7 @@
 
 # Floating Frosted Bottom Bar
 [![Dart](https://img.shields.io/badge/Dart-0175C2?logo=dart&logoColor=white)](https://pub.dev/packages/fancy_text_reveal)  ![Flutter](https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white)
+
 A Flutter package that helps you to create a frosted floating bottom navigation bar that also reacts to scrolling events.
 
 # Demo 👀
